@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Hw</title>
+</head>
+<body>
+	<h1>Hello World JavaScript.</h1>
+	<div style="border: 3px solid black; padding-left: 20px; margin-bottom: 5px;">
+		<h2>Mudando o conteúdo de uma tag</h2>
+		<button onclick="document.getElementById('ola_mundo').innerHTML = 'mudei o texto.'">Clique aqui para mudar.</button>
+		<button onclick="document.getElementById('ola_mundo').innerHTML = 'Este texto será mudado ao apertar o botão.'">Clique aqui para desfazer.</button>
+		<p id="ola_mundo">Este texto será mudado ao apertar o botão.</p>
+	</div>
+
+	<div style="border: 3px solid blue; padding-left: 20px; margin-bottom: 5px;">
+		<h2>Mudando o estilo de uma tag</h2>
+		<button onclick="document.getElementById('estilo').style.backgroundColor = 'yellow'">Clique aqui para mudar.</button>
+		<button onclick="document.getElementById('estilo').style.backgroundColor = 'lightblue'">Clique aqui para desfazer.</button>
+		<p id="estilo" style="background-color: lightblue;">Mudando o estilo deste texto.</p>
+	</div>
+
+	<div style="border: 3px solid black; padding-left: 20px; margin-bottom: 5px;">
+		<h2>Mudando o tamanho da fonte do conteúdo de uma tag</h2>
+		<button onclick="document.getElementById('tamanho_fonte').style.fontSize = '200%'">Clique aqui para mudar.</button>
+		<button onclick="document.getElementById('tamanho_fonte').style.fontSize = '100%'">Clique aqui para desfazer.</button>
+		<p id="tamanho_fonte">Este texto será mudado ao apertar o botão.</p>
+	</div>
+
+	<div style="border: 3px solid blue; padding-left: 20px; margin-bottom: 5px; padding-bottom: 10px;">
+		<h2>Mudando uma imagem</h2>
+		<button onclick="document.getElementById('lampada').src = 'imagens/pic_bulbon.gif'">Clique aqui para mudar.</button>
+		<img src="./imagens/pic_bulboff.gif" id="lampada" alt="lampada" width="50px">
+		<button onclick="document.getElementById('lampada').src = 'imagens/pic_bulboff.gif'">Clique aqui para desfazer.</button>
+	</div>
+
+	<div style="border: 3px solid black; padding-left: 20px; margin-bottom: 5px;">
+		<h2>Conteúdo aparecendo e desaparecendo.</h2>
+		<button onclick="document.getElementById('aparece_desaparece').style.display = 'none'">Clique aqui para mudar.</button>
+		<button onclick="document.getElementById('aparece_desaparece').style.display = 'block'">Clique aqui para desfazer.</button>
+		<p id="aparece_desaparece">Este texto será mudado ao apertar o botão.</p>
+	</div>
+</body>
+</html>
