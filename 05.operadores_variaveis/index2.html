@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console</title>
+</head>
+<body>
+    <h1>Tudo será visto no console.</h1>
+    <script>
+        var x = 10;
+        var y = 3;
+        var t1 = "Cleirton";
+        var t2 = "Gomes";
+        const pi = 3.1415;
+        var cond = true;
+        const lista = ["cleirton", "gomes", "brito"];
+        var prop1, prop2;
+        console.log("valor de x: " + x);
+        console.log("valor de y: " + y);
+        console.log("x < y " + (x < y));
+        console.log("x > y " + (x > y));
+        console.log("x == y " + (x == y));
+        console.log("o valor de x é do tipo: " + typeof(x));
+        console.log("o valor de t1 é do tipo: " + typeof(t1));
+        console.log("o valor de cond é do tipo: " + typeof(cond));
+        console.log("o valor de pi é do tipo: " + typeof(pi));
+        console.log("o valor de lista é do tipo: " + typeof(lista)); //object
+        console.log("usando if");
+
+        // prop1 = Number(prompt("Digite um valor: ")); //casting para number
+        // prop2 = Number(prompt("Digite outro valor: ")); //casting para number
+
+        if (prop1 > prop2){
+            console.log("1 maior que 2");
+        } else if (prop1 < prop2) {
+            console.log("1 menor que 2");
+        } else {
+            console.log("1 igual a 2");
+        }
+
+        var dia = new Date().getDay(); // esta função retorna o dia de hoje (0, 1, 2...)
+        switch(dia){
+            case 1:
+                console.log("Segunda-feira");
+                break;
+            case 2:
+                console.log("Terça-feira");
+                break;
+            case 3:
+                console.log("Quarta-feira");
+                break;
+            case 4:
+                console.log("Quinta-feira");
+                break;
+            case 5:
+                console.log("Sexta-feira");
+                break;
+            case 6:
+                console.log("Sábado");
+                break;
+            case 0:
+                console.log("Domingo");
+                break;
+        }
+
+        console.log("usando for");
+
+        for(x = 0; x < 10; x++) {
+            console.log(x);
+        }
+
+        console.log("usando while");
+
+        while(x <= 20) {
+            console.log(x);
+            x++;
+        }
+
+        console.log("usando for in");
+
+        for (var indice in lista) {
+            console.log("valor " + indice + " da lista: " + lista[indice]);
+        }
+    </script>
+</body>
+</html>

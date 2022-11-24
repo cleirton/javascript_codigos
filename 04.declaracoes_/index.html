@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declarações</title>
+    <style>
+        .estilo_geral{
+            border: 2px solid black;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Instrunções do código</h1>
+    <div class="estilo_geral">
+        <h2>Variáveis</h2>
+        <p>Declaramos as variáveis A, B e C com os valores 10, 20 e 30 respectivamente, podemos fazer operações com elas.</p>
+        <p id="resultado">Resultado da soma de A, B e C é: </p>
+        <p id="valueFloat">Ponto flutuante: </p>
+        <p id="valueString">String: </p>
+        <p id="valueStringAspasDuplas">String: </p>
+        <p id="operacao">Operação: (6 + 6 * 4) / 10 = </p>
+        <p id="operacao2">Operação: A * 100 = </p>
+        <script> 
+            // comentário de linha simples
+            /*
+                comentário de multiplas
+                linhas
+            */
+            var A, B, C;
+            A = 10; B = 20; C = 30;
+            document.getElementById("resultado").innerHTML += A + B + C; // concatenando o resultado com a string existente
+
+            A = 10.1;
+            document.getElementById("valueFloat").innerHTML += A;
+
+            A = 'string aspas simples';
+            document.getElementById("valueString").innerHTML += A;
+
+            A = "string aspas duplas";
+            document.getElementById("valueStringAspasDuplas").innerHTML += A;
+
+            A = (6 + 6 * 4) / 10;
+            document.getElementById("operacao").innerHTML += A;
+            
+            A *= 100;
+            document.getElementById("operacao2").innerHTML += A;
+        </script>
+    </div>
+</body>
+</html>

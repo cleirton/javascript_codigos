@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis e operadores</title>
+</head>
+<body>
+    <h1>Variáveis e operações:</h1>
+    <p id="valorX"></p>
+    <p id="valorY"></p>
+    <p id="valorPi"></p>
+    <p id="valorT1"></p>
+    <p id="valorT2"></p>
+    <p id="xRestoY"></p>
+    <p id="xElev2"></p>
+    <p id="concatT1T2"></p>
+    <p id="stringPInt">Nos dois casos, a variável se torna uma string: </p>
+    <p id="intPString">Nos dois casos, a variável se torna uma string: </p>
+    <p id="xTypeOf"></p>
+    <p id="valorTexto1TypeOf"></p>
+    <script>
+        var x = 100; // variável declarada, global
+        let y = 20; // variável declarada, de bloco
+        let valorTexto1 = "cleirton"; //string
+        let valorTexto2 = "gomes"; //string
+        const pi = 3.1415; // constante, de bloco
+        document.getElementById("valorX").innerHTML = "valor de x: " + x;
+        document.getElementById("valorY").innerHTML = "valor de y: " + y;
+        document.getElementById("valorPi").innerHTML = "valor de Pi: " + pi;
+        document.getElementById("valorT1").innerHTML = "valor de valorTexto1: " + valorTexto1;
+        document.getElementById("valorT2").innerHTML = "valor de valorTexto2: " + valorTexto2;
+        document.getElementById("xRestoY").innerHTML = "valor de x % y: " + (x % y);
+        document.getElementById("xElev2").innerHTML = "valor de x^2: " + (x ** 2);
+        document.getElementById("concatT1T2").innerHTML = "concatenando valorTexto1 e valorTexto2: " + valorTexto1 + valorTexto2;
+        document.getElementById("stringPInt").innerHTML += valorTexto1 + x;
+        document.getElementById("intPString").innerHTML += x + valorTexto1;
+        document.getElementById("xTypeOf").innerHTML = typeof(x);
+        document.getElementById("valorTexto1TypeOf").innerHTML = typeof(valorTexto1);
+
+    </script>
+</body>
+</html>

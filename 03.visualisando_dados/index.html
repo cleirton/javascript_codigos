@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizando Dados</title>
+</head>
+<body>
+    <h1>Formas de apresentação de dados</h1>
+    <div style="border: 2px solid black; padding: 10px; margin-bottom: 10px;">
+        <h2>Usando innerHTML</h2>
+        <p id="paragrafo"></p>
+    </div>
+    <div style="border: 2px solid black; padding: 10px; margin-bottom: 10px;">
+        <h2>Usando um window.alert</h2>
+        <button id="botao" onclick=alerta()>Clique aqui para ver o alerta</button>
+    </div>
+    <div style="border: 2px solid black; padding: 10px; margin-bottom: 10px;">
+        <h2>Usando o console.log</h2>
+        <button id="botao" onclick=alerta_console()>Clique aqui para ver o alerta</button>
+    </div>
+    <div style="border: 2px solid black; padding: 10px; margin-bottom: 10px;">
+        <h2>Usando o método print() para imprimir a página.</h2>
+        <button onclick="window.print()">Imprimir.</button>
+    </div>
+
+    <script>
+        document.getElementById('paragrafo').innerHTML = 'Texto modificado de exemplo.';
+    </script>
+
+    <script>
+        function alerta(){
+            window.alert('aqui está o alerta.')
+        }
+        function alerta_console(){
+            console.log('mensagem do console log');
+        }
+    </script>
+</body>
+</html>
