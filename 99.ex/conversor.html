@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+</head>
+<body>
+    <h1>Conversor</h1>
+    <p id="conversor"></p>
+    <script>
+        // a função toString(base) converte os valores para as bases diferentes
+        let valor = Number(prompt("Digite um valor decimal: "));
+        document.getElementById("conversor").innerHTML = 
+        "Valor digitado: " + valor + "<br>" +
+        "Valor em Hexa: " + valor.toString(16) + "<br>" +
+        "Valor em Decimal: " + valor.toString(10) + "<br>" +
+        "Valor em Octal: " + valor.toString(8) + "<br>" +
+        "Valor em Binário: " + valor.toString(2);
+    </script>
+</body>
+</html>

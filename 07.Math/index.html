@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+</head>
+<body>
+    <h1>Método Math</h1>
+    <script>
+        console.log(Math.E); // retorna o número de Euller
+        console.log(Math.PI); // retorna pi
+        console.log(Math.LN2); // retorna o logaritmo natural de 2
+        console.log(Math.LN10); // retorna o logaritmo natural de 10
+        console.log(Math.LOG2E); // retorna o logaritmo de E na base 2
+        console.log(Math.LOG10E); // retorna o logaritmo de E na base 10
+        console.log(Math.SQRT1_2); // retorna a raiz quadrada de meio
+        console.log(Math.SQRT2); // retorna a raiz quadrada de 2
+
+        console.log("\nconversões para números inteiros");
+        // arredonda o valor
+        console.log("método round()");
+        console.log("4.4 = " + Math.round(4.4)); 
+        console.log("4.5 = " + Math.round(4.5)); 
+        console.log("4.6 = " + Math.round(4.6)); 
+        console.log("");
+
+        // arredonda o valor sempre para cima
+        console.log("método ceil()");
+        console.log("4.4 = " + Math.ceil(4.4)); 
+        console.log("4.5 = " + Math.ceil(4.5)); 
+        console.log("4.6 = " + Math.ceil(4.6)); 
+        console.log("");
+
+        // arredonda o valor sempre para baixo
+        console.log("método floor()");
+        console.log("4.4 = " + Math.floor(4.4)); 
+        console.log("4.5 = " + Math.floor(4.5)); 
+        console.log("4.6 = " + Math.floor(4.6)); 
+        console.log("");
+
+        // retorna sempre a parte inteira do número
+        console.log("método trunc()");
+        console.log("4.4 = " + Math.trunc(4.4)); 
+        console.log("10.5 = " + Math.trunc(10.5)); 
+        console.log("24.6 = " + Math.trunc(24.6)); 
+        console.log("");
+
+        // retorna se o número é positivo(1) null(0) ou negativo(-1)
+        console.log("método sign()");
+        console.log("-4.4 = " + Math.sign(-4.4)); 
+        console.log("0 = " + Math.sign(0)); 
+        console.log("4.6 = " + Math.sign(4.6)); 
+        console.log("");
+
+        // retorna o valor de x elevado a y
+        console.log("método pow(x, y)");
+        console.log("2^3 = " + Math.pow(2, 3)); 
+        console.log("");
+
+        // retorna a raiz quadrada do valor
+        console.log("método sqrt(x)");
+        console.log("raiz quadrada de 36 = " + Math.sqrt(36)); 
+        console.log("");
+
+        // retorna o valor absoluto de x
+        console.log("método abs(x)");
+        console.log("abs(-25) = " + Math.abs(-25)); 
+        console.log("");
+
+        // retorna o valor do seno, entre -1 e 1, do argumento em radianos
+        console.log("método sin(x)");
+        console.log("sin(90) = " + Math.sin(90 * Math.PI / 180).toPrecision(3));
+        console.log("sin(60) = " + Math.sin(60 * Math.PI / 180).toPrecision(3));
+        console.log("sin(45) = " + Math.sin(45 * Math.PI / 180).toPrecision(3)); 
+        console.log("sin(30) = " + Math.sin(30 * Math.PI / 180).toPrecision(3));
+        console.log("sin(120) = " + Math.sin(120 * Math.PI / 180).toPrecision(3));
+        console.log("");
+
+        // retorna o valor do cosseno, entre -1 e 1, do argumento em radianos
+        console.log("método cos(x)");
+        console.log("cos(90) = " + Math.cos(90 * Math.PI / 180).toPrecision(3));
+        console.log("cos(60) = " + Math.cos(60 * Math.PI / 180).toPrecision(3));
+        console.log("cos(45) = " + Math.cos(45 * Math.PI / 180).toPrecision(3)); 
+        console.log("cos(30) = " + Math.cos(30 * Math.PI / 180).toPrecision(3));
+        console.log("cos(120) = " + Math.cos(120 * Math.PI / 180).toPrecision(3));
+        console.log("");
+
+        //retorna o valor mínimo de uma lista de valores
+        console.log("método min");
+        console.log("minimo em (0, 150, 30, 20, -8, -200): " + Math.min(0, 150, 30, 20, -8, -200));
+        console.log("");
+
+        //retorna o valor máximo de uma lista de valores
+        console.log("método max");
+        console.log("máximo em (0, 150, 30, 20, -8, -200): " + Math.max(0, 150, 30, 20, -8, -200));
+        console.log("");
+
+        //retorna um valor aleatório entre 0 (inclusive) e 1 (exclusivo)
+        console.log("método random");
+        console.log("math.random(): " + Math.round(100 * Math.random()));
+        console.log("");
+
+        //retorna o logaritmo natural
+        console.log("método log()");
+        console.log("ln(2): " + Math.log(2));
+        console.log("ln(3): " + Math.log(3));
+        console.log("ln(1): " + Math.log(1));
+        console.log("");
+
+        //retorna o logaritmo na base 2
+        console.log("método log2()");
+        console.log("log2(16): " + Math.log2(16));
+        console.log("log2(25): " + Math.log2(25));
+        console.log("log2(1024): " + Math.log2(1024));
+        console.log("");
+
+        //retorna o logaritmo na base 10
+        console.log("método log10()");
+        console.log("log10(16): " + Math.log10(16));
+        console.log("log10(25): " + Math.log10(25));
+        console.log("log10(1000): " + Math.log10(1000));
+        console.log("");
+
+        //retorna o logaritmo na base 2
+        console.log("método log2()");
+        console.log("log2(16): " + Math.log2(16));
+        console.log("log2(25): " + Math.log2(25));
+        console.log("log2(1024): " + Math.log2(1024));
+        console.log("");
+
+
+    </script>
+</body>
+</html>

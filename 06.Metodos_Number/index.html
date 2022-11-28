@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos para Number</title>
+</head>
+<body>
+    <h1>Métodos para Number</h1>
+    <p id="demo"></p>
+    <script>
+        let a = 123.456;
+        let b = "25";
+        document.getElementById("demo").innerHTML = 
+        a.toString() + "<br>" +
+        "<br>" +
+        a.toExponential() + "<br>" +
+        a.toExponential(2) + "<br>" +
+        a.toExponential(4) + "<br>" +
+        "<br>" +
+        a.toFixed(4) + "<br>" +
+        a.toFixed(3) + "<br>" +
+        a.toFixed(2) + "<br>" +
+        "<br>" +
+        a.toPrecision(6) + "<br>" +
+        a.toPrecision(5) + "<br>" +
+        a.toPrecision(4) + "<br>" +
+        "<br>" +
+        a.valueOf() + "<br>" +
+        typeof(a.valueOf()) + "<br>" +
+        "<br>" +
+        "Convertendo variáveis para número: " + "<br>" +
+        "true para number: " + Number(true) + "<br>" +
+        "false para number: " + Number(false) + "<br>" +
+        "' 10 ' para number: " + Number(" 10 ") + "<br>" +
+        "'10,33' para number: " + Number("10,33") + "<br>" +
+        "'10.33' para number: " + Number("10.33") + "<br>" +
+        "<br>" +
+        "Convertendo com parseInt()" + "<br>" +
+        "'10 30' para number com parseInt(): " + parseInt("10 30") + "<br>" +
+        "'10.30' para number com parseInt(): " + parseInt("10.30") + "<br>" +
+        "'10 years' para number com parseInt(): " + parseInt("10 years") + "<br>" +
+        "'years 10' para number com parseInt(): " + parseInt("years 10") + "<br>" +
+        "<br>" +
+        ;
+    </script>
+</body>
+</html>
